@@ -1,0 +1,27 @@
+{
+  "name": "smart-station",
+  "version": "1.0.0",
+  "description": "A Smart Workstation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salonisaraf/ECE453-SmartStation.git"
+  },
+  "keywords": [
+    "workstation",
+    "ece453"
+  ],
+  "author": "Saloni Saraf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salonisaraf/ECE453-SmartStation/issues"
+  },
+  "homepage": "https://github.com/salonisaraf/ECE453-SmartStation#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "firebase": "^4.12.1"
+  }
+}

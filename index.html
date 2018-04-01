@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartWorkstation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <h1 class="header">Welcome to Smart<b>Station</b></h1>
+    <div class="calign">
+            <div class="card">
+                    <h3 class="card-header">Start a new session</h3>
+                <form class="card-body">
+                <div class="form-group row">
+                  <label for="username" class="control-label col-sm-4 col-form-label"><b>User Name</b></label>
+                  <div class="col-sm-7">
+                    <input type="text" class="form-control" id="username" placeholder="Please enter your name" width="400px" name="username">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="session-name" class="control-label col-sm-4 col-form-label"><b>Session Name</b></label>
+                  <div class="col-sm-7">          
+                    <input type="text" class="form-control" id="session-name" placeholder="Please enter your focus for this session" name="session-name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                        <label for="session-date" class="control-label col-sm-4 col-form-label"><b>Session Date</b></label>
+                        <div class="col-sm-7">          
+                          <input type="date" class="form-control" id="session-date" placeholder="Please enter today's date (mm/dd/yyyy)" name="session-date">
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="goals" class="control-label col-sm-4 col-form-label"><b>Goals</b></label>
+                        <div class="col-sm-7">          
+                          <input type="text" class="form-control" id="goals" placeholder="Please enter your goals for this session" name="goals">
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="priority-level" class="control-label col-sm-4 col-form-label"><b>Session tasks priority</b></label>
+                        <div class="col-sm-7">
+                            <select multiple class="form-control" id="priority-level">
+                                <option>1 (Urgent and Important)</option>
+                                <option>2 (Urgent, not Important) </option>
+                                <option>3 (Important, not urgent)</option>
+                                <option>4 (Not Important, not urgent)</option>
+                            </select>
+                        </div>
+                </div>
+                <button type="submit" class="btn btn-primary" class="button">Submit</button> 
+                </form>   
+                </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
