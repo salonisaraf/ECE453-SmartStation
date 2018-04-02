@@ -1,6 +1,6 @@
 .header {
     color: rgb(254, 254, 255);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Galada, Helvetica, Arial, sans-serif;
     font-size: 240%;
     background-color: rgb(28, 87, 163);
     text-decoration: none;
@@ -9,11 +9,12 @@
     align-items: stretch;
     float:left;
     width:100%;
+    margin-bottom: 2%;
 }
 
 .btn-primary{
     color: rgb(254, 254, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Galada,  Arial, Helvetica, sans-serif;
     background: rgb(28, 87, 163);
     border-color: rgb(28, 87, 163);
 }
@@ -24,6 +25,7 @@
 }
 
 .card-header{
+    font-family: Galada, Arial, Helvetica, sans-serif;
     background: rgba(131, 185, 250, 0.5);
 }
 

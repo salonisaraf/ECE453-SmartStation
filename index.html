@@ -6,39 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
 </head>
 <body>
-    <h1 class="header">Welcome to Smart<b>Station</b></h1>
+    <div class="header">Welcome to SmartStation</div>
     <div class="calign" id="root">
             <div class="card">
                     <h3 class="card-header">Start a new session</h3>
                 <form class="card-body">
                 <div class="form-group row">
-                  <label for="username" class="control-label col-sm-4 col-form-label"><b>User Name</b></label>
+                  <label for="username" class="control-label col-sm-4 col-form-label" style="font-family:Galada"><b>User Name</b></label>
                   <div class="col-sm-7">
                     <input type="text" class="form-control" id="username" placeholder="Please enter your name" width="400px" v-model="newSession.username">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="session-name" class="control-label col-sm-4 col-form-label"><b>Session Name</b></label>
+                  <label for="session-name" class="control-label col-sm-4 col-form-label" style="font-family:Galada"><b>Session Name</b></label>
                   <div class="col-sm-7">          
                     <input type="text" class="form-control" id="session-name" placeholder="Please enter your focus for this session"  v-model="newSession.sessionName">
                   </div>
                 </div>
                 <div class="form-group row">
-                        <label for="session-date" class="control-label col-sm-4 col-form-label"><b>Session Date</b></label>
+                        <label for="session-date" class="control-label col-sm-4 col-form-label" style="font-family:Galada"><b>Session Date</b></label>
                         <div class="col-sm-7">          
                           <input type="date" class="form-control" id="session-date" placeholder="Please enter today's date (mm/dd/yyyy)" v-model="newSession.sessionDate">
                         </div>
                 </div>
                 <div class="form-group row">
-                        <label for="goals" class="control-label col-sm-4 col-form-label"><b>Goals</b></label>
+                        <label for="goals" class="control-label col-sm-4 col-form-label" style="font-family:Galada"><b>Goals</b></label>
                         <div class="col-sm-7">          
                           <input type="text" class="form-control" id="goals" placeholder="Please enter your goals for this session" v-model="newSession.goals">
                         </div>
                 </div>
                 <div class="form-group row">
-                        <label for="priority-level" class="control-label col-sm-4 col-form-label"><b>Session tasks priority</b></label>
+                        <label for="priority-level" class="control-label col-sm-4 col-form-label" style="font-family:Galada"><b>Session tasks priority</b></label>
                         <div class="col-sm-7">
                             <select multiple class="form-control" id="priority-level" v-model="newSession.priorityRank">
                                 <option>1 (Urgent and Important)</option>
