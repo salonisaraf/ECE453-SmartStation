@@ -53,7 +53,7 @@ admin.initializeApp(functions.config().firebase);
     currEntry.startTime = moment().valueOf();
     //Update the end time in the database
     sessionsRef.child(key).set(currEntry);
-    response.send("Switched on!");
+    response.send("Session ended!");
    });
   }else{
 
@@ -73,7 +73,7 @@ admin.initializeApp(functions.config().firebase);
     currEntry.endTime = moment().valueOf();
     //Update the end time in the database
     sessionsRef.child(key).set(currEntry);
-    response.send("Switched off!");
+    response.send("Session started!");
    });
   }
  });
