@@ -21,6 +21,11 @@
   //Create a Vue instance and store the different fields entered in teh form
   var vueRoot = new Vue({
     el: "#root",
+	
+	firebase: {
+		sessions: sessionsRef
+	},
+	
     data:{
         //Declaration and initilization of fields associated with each work session
         newSession:{
