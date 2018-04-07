@@ -50,10 +50,12 @@ admin.initializeApp(functions.config().firebase);
     var currEntry = snapshot.val()[key];
     //Update the end time of the current session. By default, moment gives
     // time that we need to format on the front end
-    currEntry.startTime = moment().valueOf();
+    var start = Date.now();
+    currEntry.startTime = moment(start).subtract(5, 'hours').format('h:mm:ss a');
+    currEntry.sessionDate = moment(start).subtract(5, 'hours').format('LL');
     //Update the end time in the database
     sessionsRef.child(key).set(currEntry);
-    response.send("Session ended!");
+    response.send("Session started!");
    });
   }else{
 
@@ -70,10 +72,11 @@ admin.initializeApp(functions.config().firebase);
     var currEntry = snapshot.val()[key];
     //Update the end time of the current session. By default, moment gives
     // time that we need to format on the front end
-    currEntry.endTime = moment().valueOf();
+    var end = Date.now();
+    currEntry.endTime = moment(end).subtract(5, 'hours').format('h:mm:ss a');
     //Update the end time in the database
     sessionsRef.child(key).set(currEntry);
-    response.send("Session started!");
+    response.send("Session ended!");
    });
   }
  });

@@ -58,3 +58,27 @@
         }
     }
   });
+
+  //Create a Vue instance and store the different fields entered in teh form
+  var vueRoot = new Vue({
+    el: "#root1",
+	
+	firebase: {
+		sessions: sessionsRef
+	},
+	
+    data:{
+        //Declaration and initilization of fields associated with each work session
+        newSession:{
+            username: '',
+            sessionName: '',
+            sessionDate: '',
+            startTime: '',
+            endTime: '',
+            goals: '',
+            priorityRank: []
+        }, 
+        //Declration and initilization of array that stores all the sessions on workstation
+        sessions: []
+    }
+  });
