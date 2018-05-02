@@ -1,0 +1,42 @@
+.header {
+    color: rgb(254, 254, 255);
+    font-family: Galada, Helvetica, Arial, sans-serif;
+    font-size: 240%;
+    background-color: rgb(28, 87, 163);
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: stretch;
+    float:left;
+    width:100%;
+    margin-bottom: 2%;
+}
+
+.btn-primary{
+    color: rgb(254, 254, 255);
+    font-family: Galada,  Arial, Helvetica, sans-serif;
+    background: rgb(28, 87, 163);
+    border-color: rgb(28, 87, 163);
+}
+
+.btn-primary:hover{
+    background: rgb(2, 50, 78);
+    border-color:  rgb(2, 50, 78);
+}
+
+.card-header{
+    font-family: Galada, Arial, Helvetica, sans-serif;
+    background: rgba(131, 185, 250, 0.5);
+}
+
+.calign{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width:100%;
+}
+
+.card{
+    max-width:80%; 
+    min-width:60%
+}
